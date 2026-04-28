@@ -15,3 +15,5 @@ results/charts/*
 results/tables/*
 !results/charts/.gitkeep
 !results/tables/.gitkeep
+
+CLAUDE.md
