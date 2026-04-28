@@ -1,12 +1,11 @@
-# Cross-Sectional Return Prediction
+# Cross-Sectional ML Trading
 
-A research project on cross-sectional equity return prediction using financial features, rigorous walk-forward evaluation, and comparison against strong baselines.
+A research project on cross-sectional equity return prediction using financial features.
 
 ## Goals
 - Build a clean market-data pipeline
 - Engineer predictive cross-sectional features
 - Compare baseline and stronger ML models
-- Evaluate signals with robust out-of-sample testing
 
 ## Structure
 - `src/`: core Python modules
