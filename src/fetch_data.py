@@ -27,10 +27,7 @@ def fetch_raw_data(tickers_list: list[str]) -> pd.DataFrame:
         auto_adjust=True
         )
     
-    cc = CacheConfig(raw_path="../data/raw/yahoo_raw.parquet",
-                     close_path="../data/processed/close.parquet",
-                     returns_path="../data/processed/returns.parquet",
-                     log_returns_path="../data/processed/log_returns.parquet")
+    cc = CacheConfig(raw_path="../data/raw/yahoo_S&P_500/raw.parquet")
 
     data_loader = YahooFinanceLoader(dr)
     bundle = data_loader.build_bundle()
@@ -38,10 +35,5 @@ def fetch_raw_data(tickers_list: list[str]) -> pd.DataFrame:
     return bundle
 
 if __name__ == "__main__":
-    #check if the data is already downloaded, if not, download it
-    try:
-        data_raw = pd.read_parquet("data/raw/yahoo_raw.parquet")
-        print("Data already downloaded.")
-    except FileNotFoundError:
-        tickers = load_sp500_tickers()
-        fetch_raw_data(tickers)
+    tickers = load_sp500_tickers()
+    fetch_raw_data(tickers)
