@@ -13,6 +13,8 @@ data/features/*
 
 papers/
 
+.claude/
+
 results/charts/*
 results/tables/*
 !results/charts/.gitkeep
