@@ -1,0 +1,12 @@
+metric,value
+Mean IC,0.0353
+IC Std,0.1549
+ICIR,0.2281
+IC t-stat (Newey-West),3.71
+IC p-value (NW),0.0003
+IC Hit Rate,61.0%
+Mean L/S Spread,0.0319
+L/S Hit Rate,61.5%
+N Cross-sections,182
+Period Start,2011-01-10
+Period End,2026-02-23

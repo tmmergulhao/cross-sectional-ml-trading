@@ -1,4 +1,4 @@
-from src.features.registry import (
+from features.registry import (
     FeatureGroup,
     FeatureStore,
     REGISTRY,
